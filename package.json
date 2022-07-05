@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev-start": "nodemon server.js"
+    "start": "pm2 start server.js --watch --no-daemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.4.2"
+    "mongoose": "^6.4.2",
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
